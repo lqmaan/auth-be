@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Require routes
 const userRoutes = require("./routes/userRoute");
 
-app.use("user/", userRoutes);
+app.use("/user", userRoutes);
 
 app.get("/", (req, res) => {
   res.json("Back end for Auth Page");
